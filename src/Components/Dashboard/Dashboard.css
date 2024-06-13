@@ -1,0 +1,130 @@
+.leaderboard {
+    margin: 10px auto;
+    padding: 20px;
+    width: 90%;
+    background: #f8f9fa;
+    box-shadow: 0 8px 8px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #333;
+    letter-spacing: 6px;
+    font-weight: 900;
+    font-family: 'Bungee Inline', cursive;
+  }
+  
+#p1 {
+    font-size: 1.9em;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: 2px;
+    font-weight: 900;
+  }
+#p2 {
+    padding: 12px;
+    /* font-size: 0.8em; */
+    /* margin-bottom: 10px; */
+    color: #333;
+    background-color: #d5d9de;
+    border-radius: 8px;
+    /* font-weight: 900; */
+  }
+  #p2 select{
+    border: none;
+    background-color: transparent;
+  }
+  
+  .leaderboard table {
+    width: 100%;
+    border-collapse: collapse;
+    /* animation: slideIn 1s ease-in-out; */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .leaderboard th, .leaderboard td {
+    padding: 20px 10px;
+    text-align: left;
+    color: rgb(7, 30, 49);
+  }
+  
+  .leaderboard th {
+    background: #d5d9de;
+    color: rgb(7, 30, 49);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .leaderboard tr:hover {
+    background: #ddd;
+  }
+  
+  .view-button, .buy-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-button {
+    background-color: #0f3556;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .buy-button {
+    background-color: #3dac6a;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-button:hover {
+    background-color: #218838;
+  }
+  
+  .basic {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+  }
+  .blink {
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @media only screen and (max-width: 768px) {
+    .leaderboard {
+      width: 100%; /* Adjust width to fit smaller screens */
+    }
+  }
+  
